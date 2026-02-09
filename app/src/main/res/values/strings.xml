@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GuessNumber</string>
+
+    <string name="try_to_guess">Я загадал число от 1 до 100. Попробуй угадать!</string>
+    <string name="input_hint">Введите число</string>
+
+    <string name="button_guess">Угадать</string>
+    <string name="button_play_again">Сыграть ещё</string>
+
+    <string name="error_empty">Сначала введите число</string>
+    <string name="error_not_number">Введите корректное число</string>
+    <string name="error_out_of_range">Число должно быть от 1 до 100</string>
+
+    <string name="hint_less">Загаданное число меньше</string>
+    <string name="hint_greater">Загаданное число больше</string>
+
+    <string name="win_text">Ты угадал! Нажми кнопку, чтобы сыграть ещё раз.</string>
+
+    <string name="attempts_zero">Попыток: 0</string>
+    <string name="attempts_format">Попыток: %1$d</string>
+</resources>
