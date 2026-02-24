@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Ночная тема (пусть будет такой же, чтобы не мучиться) -->
+    <style name="Theme.GuessNumber" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Настройки можно добавить позже -->
+    </style>
+
+</resources>

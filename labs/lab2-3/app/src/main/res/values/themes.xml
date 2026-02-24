@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Основная тема приложения -->
+    <style name="Theme.GuessNumber" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Здесь можно настраивать цвета, если захочешь -->
+    </style>
+
+</resources>
