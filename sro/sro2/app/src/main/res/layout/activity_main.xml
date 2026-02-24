@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Главное окно приложения -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Кнопка, по которой переходим ко второму окну -->
+    <Button
+        android:id="@+id/btnActTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to Activity Two" />
+
+</LinearLayout>

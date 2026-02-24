@@ -1,0 +1,12 @@
+<resources>
+
+    <!-- Название приложения -->
+    <string name="app_name">TwoActivitiesApp</string>
+
+    <!-- Текст кнопки на первом экране -->
+    <string name="btn_go_to_two">Go to Activity Two</string>
+
+    <!-- Текст на втором экране -->
+    <string name="activity_two_text">This is Activity Two</string>
+
+</resources>
