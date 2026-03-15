@@ -26,7 +26,8 @@
         android:layout_below="@id/etQuery"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="8dp"
-        android:text="@string/btn_go" />
+        android:text="@string/btn_go"
+        android:orientation="vertical"/>
 
     <!-- Строка с источником изображения -->
     <LinearLayout
@@ -102,7 +103,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginEnd="8dp"
-            android:text="@string/btn_like" />
+            android:text="@string/btn_like"
+            android:orientation="vertical"/>
 
         <!-- Кнопка Dislike -->
         <Button

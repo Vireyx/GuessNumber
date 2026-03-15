@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🎯 Распознавание ВСЕХ жестов"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="8dp"
+        android:background="#E3F2FD"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Выполните жесты над областью ниже:"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#F5F5F5"
+        android:padding="12dp"
+        android:textSize="14sp"
+        android:fontFamily="monospace"
+        android:scrollbars="vertical"
+        android:gravity="top"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="💡 Подсказки:\n• onDown — начало касания\n• onFling — быстрый свайп\n• onScroll — перемещение пальца\n• onLongPress — удержание 1+ сек\n• onDoubleTap — два быстрых тапа"
+        android:padding="8dp"
+        android:textSize="12sp"
+        android:background="#FFF9C4"/>
+
+</LinearLayout>

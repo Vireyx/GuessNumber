@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⚙️ Распознавание ЧАСТИ жестов"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="8dp"
+        android:background="#E8F5E9"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Активны только: onFling и onLongPress"
+        android:padding="8dp"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#F5F5F5"
+        android:padding="12dp"
+        android:textSize="14sp"
+        android:fontFamily="monospace"
+        android:scrollbars="vertical"
+        android:gravity="top"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="💡 Попробуйте:\n• Быстро проведите пальцем (свайп)\n• Удерживайте палец 1+ секунду"
+        android:padding="8dp"
+        android:textSize="12sp"
+        android:background="#C8E6C9"/>
+
+</LinearLayout>
