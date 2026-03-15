@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sro3">
+
+    <!--
+        РАЗРЕШЕНИЕ для ContentProvider
+        protectionLevel="signature" означает:
+        - Только приложения с той же подписью могут получить доступ
+        - Защищает данные от посторонних приложений
+    -->
+    <permission
+        android:name="com.example.sro3.permission.READ"
+        android:protectionLevel="signature" />
+
+
+    <application
+        android:allowBackup="true"
+        android:label="sro3"
+        android:icon="@mipmap/ic_launcher"
+        android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar">
+
+        <!--
+            ГЛАВНАЯ АКТИВНОСТЬ
+            exported="true" - может быть запущена извне
+            intent-filter - делает её точкой входа приложения
+        -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!--
+            АКТИВНОСТЬ ДОБАВЛЕНИЯ ЗАДАЧИ
+            parentActivityName - для навигации вверх
+        -->
+        <activity
+            android:name=".AddTaskActivity"
+            android:parentActivityName=".MainActivity"/>
+
+        <!--
+            CONTENT PROVIDER (Доп. задание №4)
+            - authorities: уникальный идентификатор
+            - exported: доступен другим приложениям
+            - readPermission/writePermission: защита доступом
+        -->
+        <provider
+            android:name=".TaskProvider"
+            android:authorities="com.example.sro3.provider"
+            android:exported="true"
+            android:readPermission="com.example.sro3.permission.READ"
+            android:writePermission="com.example.sro3.permission.READ"/>
+
+    </application>
+</manifest>
