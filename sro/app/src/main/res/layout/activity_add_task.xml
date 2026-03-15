@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/etName"
+        android:hint="Название *"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etCategory"
+        android:hint="Категория"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>  <!-- ✅ Правильно: отдельный атрибут -->
+
+    <!-- ✅ Правильно: комментарий ДО тега -->
+    <TextView
+        android:id="@+id/tvDeadline"
+        android:text="Выбрать дедлайн"
+        android:padding="12dp"
+        android:background="#EEE"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- ✅ Правильно: комментарий ДО тега -->
+    <Button
+        android:id="@+id/btnSave"
+        android:text="Сохранить"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

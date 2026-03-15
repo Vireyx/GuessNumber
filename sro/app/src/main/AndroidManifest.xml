@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sro3">
+
+    <permission android:name="com.example.sro3.permission.READ" android:protectionLevel="signature"/>
+
+    <application android:allowBackup="true" android:label="sro3" android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar">
+
+        <activity android:name=".MainActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".AddTaskActivity" android:parentActivityName=".MainActivity"/>
+
+        <!-- Доп. задание №4: ContentProvider с защитой -->
+        <provider android:name=".TaskProvider"
+            android:authorities="com.example.sro3.provider"
+            android:exported="true"
+            android:readPermission="com.example.sro3.permission.READ"
+            android:writePermission="com.example.sro3.permission.READ"/>
+
+    </application>
+</manifest>
