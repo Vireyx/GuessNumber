@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Экран медиаплеера с VideoView и управлением -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MediaActivity">
+
+    <!-- VideoView для воспроизведения видео -->
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Поле для пути к файлу -->
+    <EditText
+        android:id="@+id/et_MediaPath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Путь к видео"
+        android:inputType="text"
+        android:enabled="false"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Кнопка ВЫБРАТЬ ФАЙЛ -->
+    <Button
+        android:id="@+id/b_SelectFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📁 ВЫБРАТЬ ФАЙЛ"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Кнопки управления -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Кнопка СТАРТ -->
+        <Button
+            android:id="@+id/b_Start"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="▶️ СТАРТ"
+            android:layout_marginEnd="4dp" />
+
+        <!-- Кнопка ПАУЗА -->
+        <Button
+            android:id="@+id/b_Pause"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="⏸️ ПАУЗА"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp" />
+
+        <!-- Кнопка ПРОДОЛЖИТЬ -->
+        <Button
+            android:id="@+id/b_Resume"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="▶️ ПРОДОЛЖИТЬ"
+            android:layout_marginStart="4dp" />
+
+    </LinearLayout>
+
+    <!-- Кнопка СТОП и чекбокс -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <!-- Кнопка СТОП -->
+        <Button
+            android:id="@+id/b_Stop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="⏹️ СТОП"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Чекбокс Зациклить -->
+        <CheckBox
+            android:id="@+id/chb_Loop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🔁 Зациклить"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+</LinearLayout>
