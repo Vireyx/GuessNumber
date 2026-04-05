@@ -1,2 +1,4 @@
 *.kt linguist-detectable=false
 *.kts linguist-detectable=false
+*.xml linguist-language=XML
+*.html linguist-vendored
