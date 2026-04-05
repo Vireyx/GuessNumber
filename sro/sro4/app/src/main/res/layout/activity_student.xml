@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Имя студента:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="5dp"/>
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите ваше имя"
+            android:inputType="textPersonName"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#999999"
+            android:minHeight="48dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Группа:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="5dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerGroup"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/tvAgeValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Возраст: 18 лет"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_marginBottom="5dp"/>
+
+        <SeekBar
+            android:id="@+id/seekBarAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="50"
+            android:progress="18"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Дата рождения:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="5dp"/>
+
+        <Button
+            android:id="@+id/btnPickDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ВЫБРАТЬ ДАТУ"
+            android:minHeight="48dp"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/tvDateValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Не выбрана"
+            android:textColor="#666666"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Фотография:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="5dp"/>
+
+        <ImageView
+            android:id="@+id/ivPhoto"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:background="#CCCCCC"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/btnTakePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📷 СДЕЛАТЬ ФОТО"
+            android:minHeight="48dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✓ Данные сохраняются автоматически"
+            android:gravity="center"
+            android:textColor="#666666"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="← В ГЛАВНОЕ МЕНЮ"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:minHeight="48dp"/>
+
+    </LinearLayout>
+</ScrollView>
